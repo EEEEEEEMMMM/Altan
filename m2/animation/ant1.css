@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block1{
+    width: 250px;
+    height: 300px;
+    background-color: green;
+    animation-name: Color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: infinite
+}
+
+.block2{
+    margin: 200px;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    animation-name: Size;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: infinite
+}
+
+.block3{
+    width: 1000px;
+    height: 500px;
+    background-color: palegoldenrod;
+    animation-name: Border;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: infinite
+}
+
+@keyframes Border{
+    0%{
+        border-radius: 0;
+    }
+    50%{
+        border-radius: 350px;
+    }
+    100%{
+        border-radius: 1100px;
+    }
+}
+
+@keyframes Size{
+    0%{
+        width: 400px;
+        height: 200px;
+    }
+    25%{
+        width: 200px;
+        height: 100px;
+    }
+    75%{
+        width: 20px;
+        height: 50px;
+    }
+    100%{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+@keyframes Color{
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: rebeccapurple;
+    }
+    100%{
+        background-color: teal;
+    }
+}
+
+.block4{
+    margin: 200px;
+    background-color: olive;
+    animation-name: Position;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: infinite
+}
+
+@keyframes Position{
+    from{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    to{
+        position: relative;
+        top: 200px;
+        left: 10px;
+    }
+}
+
+.block4 h1{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    animation-name: MoveText;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: infinite
+}
+
+@keyframes MoveText{
+    from{
+        font-size: 24px;
+        color: white;
+        text-shadow: 0 0 0 black;
+    }
+    to{
+        font-size: 48px;
+        color: blue;
+        text-shadow: 30px 10px 100px black;
+    }
+}
